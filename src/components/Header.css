@@ -1,0 +1,179 @@
+.header {
+    background-color: #ece8e3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin: 0; /* AJOUTER */
+    padding: 0; /* AJOUTER */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%; /* AJOUTER */
+    padding: 0 40px;
+    box-sizing: border-box; /* AJOUTER */
+}
+
+
+.header-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    justify-content: flex-start;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.logo-image {
+    height: 130px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.nav ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav a {
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 400;
+    color: #191919;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+
+.nav a:hover {
+    color: #3a1f1f;
+}
+
+.icon {
+    font-size: 1.8rem;
+    color: #191919;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #3a1f1f;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .header-top {
+        width: 100%;
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ece8e3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav.active {
+        transform: translateX(0);
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: 2rem;
+        color: #191919;
+        cursor: pointer;
+    }
+
+    .close {
+        display: block;
+        font-size: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        color: #191919;
+    }
+
+    .header-side {
+        display: none;
+    }
+
+    .logo-image {
+        height: 60px;
+    }
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.icon:hover {
+    filter: brightness(0.6);
+}

@@ -1,0 +1,45 @@
+.location-section {
+    padding: 40px 20px;
+ 
+    text-align: center;
+}
+
+.location-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+    color: #191919;
+
+     font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #3e1f20;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.map-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.address {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3a1f1f;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.map-link:hover {
+    color: #191919;
+}

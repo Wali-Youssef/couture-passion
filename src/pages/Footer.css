@@ -1,0 +1,9 @@
+.footer {
+    background-color: #ece8e3;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    border-top: 1px solid #ccc;
+}
